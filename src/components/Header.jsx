@@ -1,14 +1,12 @@
-import React from 'react';
-
-function Header() {
+export default function Header() {
   return (
-    <header className="flex flex-col items-center gap-4 text-center py-10">
-      <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Crisp Twitter Logo Component</h1>
-      <p className="text-slate-600 max-w-2xl">
-        A reusable, accessible Twitter logo (old bird) React component with color and size controls. Styled with Tailwind.
+    <header className="py-10 text-center">
+      <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+        Customizable Twitter Logo
+      </h1>
+      <p className="mt-2 text-gray-600 dark:text-gray-300">
+        Tweak color, size, and export the component code instantly.
       </p>
     </header>
   );
 }
-
-export default Header;

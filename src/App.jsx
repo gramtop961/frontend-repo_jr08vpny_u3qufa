@@ -1,20 +1,21 @@
-import React from 'react';
-import Header from './components/Header';
-import SocialCTA from './components/SocialCTA';
-import LogoShowcase from './components/LogoShowcase';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import SocialCTA from "./components/SocialCTA";
+import LogoShowcase from "./components/LogoShowcase";
+import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-sky-50 to-white text-slate-800">
-      <div className="max-w-5xl mx-auto px-6 py-10">
+    <div className="min-h-screen bg-gradient-to-b from-white to-sky-50 dark:from-gray-950 dark:to-gray-900">
+      <div className="mx-auto max-w-5xl px-6">
         <Header />
-        <SocialCTA />
-        <LogoShowcase />
+
+        <main className="space-y-10">
+          <SocialCTA />
+          <LogoShowcase />
+        </main>
+
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
-
-export default App;
